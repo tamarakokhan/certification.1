@@ -15,9 +15,9 @@ string InputString(string text)
     return Console.ReadLine();
 }
 
-string[] CreateArray(string text)
+string[] CreateArray()
 {
-    string[] array = new string[Input(text)];
+    string[] array = new string[Input("Введите размер массива: ")];
     int index = 0;
     while (index < array.Length)
     {
@@ -66,7 +66,7 @@ void PrintArray(string[] array)
     }
 }
 
-string[] initialArray = CreateArray("Введите размер массива: ");
+string[] initialArray = CreateArray();
 
 Console.Write("Первоначальный массив: ");
 PrintArray(initialArray);
